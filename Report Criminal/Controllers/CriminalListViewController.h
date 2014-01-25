@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "AppUtility.h"
+#import "CriminalDetailViewController.h"
+#import "CriminalReportedViewController.h"
 
-@interface CriminalListViewController : UIViewController
+@interface CriminalListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 
 #pragma mark - IBOutlets
@@ -18,4 +20,5 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnMostWantedCriminals;
 @property (weak, nonatomic) IBOutlet UIButton *btnNearMyPlaceCriminal;
 
+@property (weak, nonatomic) IBOutlet UITableView *tblCriminalList;
 @end

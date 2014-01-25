@@ -13,7 +13,7 @@
 
 #pragma mark Singilton Method
 
-+(AppUtility *)sharedGMSUtility
++(AppUtility *)sharedAppUtility
 {
     static AppUtility *sharedInstance = nil;
     static dispatch_once_t onceToken;

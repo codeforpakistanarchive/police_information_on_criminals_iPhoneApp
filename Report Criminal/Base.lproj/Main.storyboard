@@ -56,7 +56,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="pDK-4m-zeG">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="pDK-4m-zeG">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pDK-4m-zeG" id="SEv-CY-Uym">
@@ -81,6 +81,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="Kke-w6-5CL"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="XDL-HB-KXa"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -91,11 +95,58 @@
                         <outlet property="btnMostReportedCriminals" destination="cwa-bN-c40" id="s7C-LG-A0p"/>
                         <outlet property="btnMostWantedCriminals" destination="x1R-Hm-CwQ" id="n8L-ju-dDN"/>
                         <outlet property="btnNearMyPlaceCriminal" destination="6eI-rR-KZ4" id="cl7-Et-4V7"/>
+                        <outlet property="tblCriminalList" destination="oZm-YZ-oIg" id="AV3-Jh-JlC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="739" y="29"/>
+        </scene>
+        <!--Criminal Detail View Controller-->
+        <scene sceneID="S4q-cH-0Q2">
+            <objects>
+                <viewController id="BMh-u8-9UV" customClass="CriminalDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gHO-GD-LfB"/>
+                        <viewControllerLayoutGuide type="bottom" id="KmZ-Ms-rod"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cKR-i5-Scj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQ0-iT-pzj">
+                                <rect key="frame" x="184" y="298" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKF-wp-Vky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221" y="25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="S4u-od-7zq">
+            <objects>
+                <viewController id="z0X-2k-sHf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="51N-cU-tTD"/>
+                        <viewControllerLayoutGuide type="bottom" id="rbH-dL-Znm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PuG-Y2-YUw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ePC-TH-NRj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GtC-cu-ajV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="33"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TSg-J7-6Km">
