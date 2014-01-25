@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B670FE091893B94A00B575AF /* CriminalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670FE081893B94A00B575AF /* CriminalListViewController.m */; };
+		B670FE0A1893B94A00B575AF /* CriminalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670FE081893B94A00B575AF /* CriminalListViewController.m */; };
 		B69F495F18938EA8005D6EB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69F495E18938EA8005D6EB1 /* Foundation.framework */; };
 		B69F496118938EA8005D6EB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69F496018938EA8005D6EB1 /* CoreGraphics.framework */; };
 		B69F496318938EA8005D6EB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69F496218938EA8005D6EB1 /* UIKit.framework */; };
@@ -19,8 +21,6 @@
 		B69F49A518938F13005D6EB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F499618938F13005D6EB1 /* AppDelegate.m */; };
 		B69F49A618938F13005D6EB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69F499718938F13005D6EB1 /* Main.storyboard */; };
 		B69F49A718938F13005D6EB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69F499718938F13005D6EB1 /* Main.storyboard */; };
-		B69F49A818938F13005D6EB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F499B18938F13005D6EB1 /* ViewController.m */; };
-		B69F49A918938F13005D6EB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F499B18938F13005D6EB1 /* ViewController.m */; };
 		B69F49AA18938F13005D6EB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B69F499C18938F13005D6EB1 /* InfoPlist.strings */; };
 		B69F49AB18938F13005D6EB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B69F499C18938F13005D6EB1 /* InfoPlist.strings */; };
 		B69F49AC18938F13005D6EB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69F499F18938F13005D6EB1 /* Images.xcassets */; };
@@ -60,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B670FE071893B94A00B575AF /* CriminalListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriminalListViewController.h; sourceTree = "<group>"; };
+		B670FE081893B94A00B575AF /* CriminalListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CriminalListViewController.m; sourceTree = "<group>"; };
 		B69F495B18938EA8005D6EB1 /* Report Criminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Report Criminal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69F495E18938EA8005D6EB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B69F496018938EA8005D6EB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,8 +74,6 @@
 		B69F499518938F13005D6EB1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B69F499618938F13005D6EB1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B69F499818938F13005D6EB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B69F499A18938F13005D6EB1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B69F499B18938F13005D6EB1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B69F499D18938F13005D6EB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B69F499F18938F13005D6EB1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B69F49A018938F13005D6EB1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -122,6 +122,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B670FE061893B93400B575AF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B670FE071893B94A00B575AF /* CriminalListViewController.h */,
+				B670FE081893B94A00B575AF /* CriminalListViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		B69F495218938EA8005D6EB1 = {
 			isa = PBXGroup;
 			children = (
@@ -173,10 +182,10 @@
 		B69F499318938F13005D6EB1 /* Report Criminal */ = {
 			isa = PBXGroup;
 			children = (
+				B670FE061893B93400B575AF /* Controllers */,
 				B69F49B218939272005D6EB1 /* Database */,
 				B69F499418938F13005D6EB1 /* AppDelegate */,
 				B69F499718938F13005D6EB1 /* Main.storyboard */,
-				B69F499918938F13005D6EB1 /* Controllers */,
 				B69F499C18938F13005D6EB1 /* InfoPlist.strings */,
 				B69F499E18938F13005D6EB1 /* Helper Classes */,
 				B69F499F18938F13005D6EB1 /* Images.xcassets */,
@@ -195,15 +204,6 @@
 				B69F499618938F13005D6EB1 /* AppDelegate.m */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		B69F499918938F13005D6EB1 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				B69F499A18938F13005D6EB1 /* ViewController.h */,
-				B69F499B18938F13005D6EB1 /* ViewController.m */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B69F499E18938F13005D6EB1 /* Helper Classes */ = {
@@ -362,8 +362,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B69F49A818938F13005D6EB1 /* ViewController.m in Sources */,
 				B69F49CF1893A5C2005D6EB1 /* RCCriminal.m in Sources */,
+				B670FE091893B94A00B575AF /* CriminalListViewController.m in Sources */,
 				B69F49D31893A5D9005D6EB1 /* RCReported.m in Sources */,
 				B69F49AE18938F13005D6EB1 /* main.m in Sources */,
 				B69F49DB1893A6BE005D6EB1 /* Criminal.m in Sources */,
@@ -385,12 +385,12 @@
 				B69F49BB18939336005D6EB1 /* AppUtility.m in Sources */,
 				B69F49D41893A5D9005D6EB1 /* RCReported.m in Sources */,
 				B69F49D01893A5C2005D6EB1 /* RCCriminal.m in Sources */,
-				B69F49A918938F13005D6EB1 /* ViewController.m in Sources */,
 				B69F49CC1893A505005D6EB1 /* Reported.m in Sources */,
 				B69F49C81893A505005D6EB1 /* ConcernAuthority.m in Sources */,
 				B69F49A518938F13005D6EB1 /* AppDelegate.m in Sources */,
 				B69F49C018939637005D6EB1 /* Reachability.m in Sources */,
 				B69F49B618939284005D6EB1 /* Model.xcdatamodeld in Sources */,
+				B670FE0A1893B94A00B575AF /* CriminalListViewController.m in Sources */,
 				B69F49AF18938F13005D6EB1 /* main.m in Sources */,
 				B69F498A18938EA9005D6EB1 /* Report_CriminalTests.m in Sources */,
 				B69F49D81893A5F0005D6EB1 /* RCAuthority.m in Sources */,
@@ -594,6 +594,7 @@
 				B69F498F18938EA9005D6EB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B69F499018938EA9005D6EB1 /* Build configuration list for PBXNativeTarget "Report CriminalTests" */ = {
 			isa = XCConfigurationList;
@@ -602,6 +603,7 @@
 				B69F499218938EA9005D6EB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
