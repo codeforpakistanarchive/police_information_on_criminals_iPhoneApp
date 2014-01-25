@@ -9,5 +9,8 @@
 #import "RCAuthority.h"
 
 @implementation RCAuthority
-
+@synthesize name;
+@synthesize address;
+@synthesize phoneNumber;
+@synthesize criminals;
 @end

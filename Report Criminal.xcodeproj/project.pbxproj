@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6550EF91893C83B008F01A4 /* CriminalListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550EF81893C83B008F01A4 /* CriminalListModel.m */; };
+		B6550EFA1893C83B008F01A4 /* CriminalListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550EF81893C83B008F01A4 /* CriminalListModel.m */; };
 		B670FE091893B94A00B575AF /* CriminalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670FE081893B94A00B575AF /* CriminalListViewController.m */; };
 		B670FE0A1893B94A00B575AF /* CriminalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670FE081893B94A00B575AF /* CriminalListViewController.m */; };
 		B670FE0D1893C25700B575AF /* CriminalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670FE0C1893C25700B575AF /* CriminalDetailViewController.m */; };
@@ -64,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B6550EF71893C83B008F01A4 /* CriminalListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriminalListModel.h; sourceTree = "<group>"; };
+		B6550EF81893C83B008F01A4 /* CriminalListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CriminalListModel.m; sourceTree = "<group>"; };
 		B670FE071893B94A00B575AF /* CriminalListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriminalListViewController.h; sourceTree = "<group>"; };
 		B670FE081893B94A00B575AF /* CriminalListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CriminalListViewController.m; sourceTree = "<group>"; };
 		B670FE0B1893C25700B575AF /* CriminalDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriminalDetailViewController.h; sourceTree = "<group>"; };
@@ -236,6 +240,8 @@
 				B69F49D21893A5D9005D6EB1 /* RCReported.m */,
 				B69F49D51893A5F0005D6EB1 /* RCAuthority.h */,
 				B69F49D61893A5F0005D6EB1 /* RCAuthority.m */,
+				B6550EF71893C83B008F01A4 /* CriminalListModel.h */,
+				B6550EF81893C83B008F01A4 /* CriminalListModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 				B670FE0D1893C25700B575AF /* CriminalDetailViewController.m in Sources */,
 				B69F49D71893A5F0005D6EB1 /* RCAuthority.m in Sources */,
 				B69F49B518939284005D6EB1 /* Model.xcdatamodeld in Sources */,
+				B6550EF91893C83B008F01A4 /* CriminalListModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +412,7 @@
 				B69F49C018939637005D6EB1 /* Reachability.m in Sources */,
 				B69F49B618939284005D6EB1 /* Model.xcdatamodeld in Sources */,
 				B670FE0A1893B94A00B575AF /* CriminalListViewController.m in Sources */,
+				B6550EFA1893C83B008F01A4 /* CriminalListModel.m in Sources */,
 				B69F49AF18938F13005D6EB1 /* main.m in Sources */,
 				B69F498A18938EA9005D6EB1 /* Report_CriminalTests.m in Sources */,
 				B670FE0E1893C25700B575AF /* CriminalDetailViewController.m in Sources */,

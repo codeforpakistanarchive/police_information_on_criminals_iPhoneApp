@@ -10,6 +10,10 @@
 #import "AppUtility.h"
 #import "CriminalDetailViewController.h"
 #import "CriminalReportedViewController.h"
+#import "RCCriminal.h"
+#import "RCAuthority.h"
+#import "CriminalListModel.h"
+#import "AppDelegate.h"
 
 @interface CriminalListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "RCReported.h"
+#import "AppDelegate.h"
+#import "AppUtility.h"
 @interface CriminalReportedViewController : UIViewController
 
 @end

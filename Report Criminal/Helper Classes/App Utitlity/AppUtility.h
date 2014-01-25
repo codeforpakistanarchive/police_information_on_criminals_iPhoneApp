@@ -13,7 +13,7 @@
 #define AlertTitle @"Report Criminal"
 
 #define Utility [AppUtility sharedAppUtility]
-#define AppDelegate (AppDelegate *)[[UIApplication sharedApplication] delegate]
+#define delegateObj (AppDelegate *)[[UIApplication sharedApplication] delegate]
 #define GlobalContext (AppDelegate *)[[UIApplication sharedApplication] delegate]
 
 #define AppBgColor        [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]

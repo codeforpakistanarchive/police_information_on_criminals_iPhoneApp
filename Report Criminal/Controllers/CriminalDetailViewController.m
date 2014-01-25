@@ -13,7 +13,8 @@
 @end
 
 @implementation CriminalDetailViewController
-//@synthesize btnReported;
+@synthesize btnReported;
+@synthesize lblCriminalInfo;
 
 #pragma mark - Initilizer Method
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -31,6 +32,8 @@
 {
     [super viewDidLoad];
 	[self setView];
+    AppDelegate *delegate = delegateObj;
+    lblCriminalInfo.text = [NSString stringWithFormat:@"Criminal %@ is wanted with age %@",delegate.currentCriminal.firstName, delegate.currentCriminal.age];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,8 +45,8 @@
 #pragma mark - Custom methods
 -(void)setView
 {
-    //[self.navigationController.navigationBar setHidden:YES];
-   // [btnReported setBackgroundImage:btnBgImage forState:UIControlStateNormal];
+    [self.navigationController.navigationBar setHidden:YES];
+    [btnReported setBackgroundImage:btnBgImage forState:UIControlStateNormal];
 }
 
 @end

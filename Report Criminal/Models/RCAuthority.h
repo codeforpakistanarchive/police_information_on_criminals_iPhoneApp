@@ -10,4 +10,8 @@
 
 @interface RCAuthority : NSObject
 
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * address;
+@property (nonatomic, retain) NSString * phoneNumber;
+@property (nonatomic, retain) NSSet *criminals;
 @end

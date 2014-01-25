@@ -9,7 +9,10 @@
 #import "CriminalReportedViewController.h"
 
 @interface CriminalReportedViewController ()
-
+{
+    RCReported *reportedHistory;
+    NSArray *reportedRecords;
+}
 @end
 
 @implementation CriminalReportedViewController
@@ -26,7 +29,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    AppDelegate *delegate = delegateObj;
+    reportedRecords = [delegate.currentCriminal.reportedHistory allObjects];
+    reportedHistory = [reportedRecords objectAtIndex:0];
+
 }
 
 - (void)didReceiveMemoryWarning

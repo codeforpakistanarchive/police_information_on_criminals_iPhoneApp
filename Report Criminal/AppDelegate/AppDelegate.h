@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RCCriminal.h"
 @import CoreData;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
+    RCCriminal *currentCriminal;
     NSManagedObjectModel *managedObjectModel;
     NSManagedObjectContext *managedObjectContext;
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
@@ -17,6 +19,8 @@
 
 #pragma mark - Properties
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) RCCriminal *currentCriminal;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;

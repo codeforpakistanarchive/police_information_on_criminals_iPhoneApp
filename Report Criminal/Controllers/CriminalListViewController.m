@@ -9,7 +9,9 @@
 #import "CriminalListViewController.h"
 
 @interface CriminalListViewController ()
-
+{
+    NSArray *criminals;
+}
 -(void)setView;
 @end
 
@@ -33,6 +35,8 @@
 {
     [super viewDidLoad];
 	[self setView];
+    CriminalListModel *modelObj = [[CriminalListModel alloc] init];
+    criminals = [modelObj getAllCriminals];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,7 +48,7 @@
 #pragma mark - UITableView Data Source Methods
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return [criminals count];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -62,21 +66,25 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
 
-    [cell.textLabel setText:[NSString stringWithFormat:@"Criminal %i",indexPath.row]];
+    RCCriminal *criminal = [criminals objectAtIndex:indexPath.row];
+    [cell.textLabel setText:criminal.firstName];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //[self performSegueWithIdentifier:@"criminalDetail" sender:nil];
-    CriminalDetailViewController *criminalDetail = [[CriminalDetailViewController alloc] init];
+    UIStoryboard *storyBoard = [Utility currentStoryBoard];
+    CriminalDetailViewController *criminalDetail = [storyBoard instantiateViewControllerWithIdentifier:@"detailView"];
+    AppDelegate *delegate = delegateObj;
+    delegate.currentCriminal = [criminals objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:criminalDetail animated:YES];
 }
 
 #pragma mark - Custom methods
 -(void)setView
 {
-    //[self.navigationController.navigationBar setHidden:YES];
+    [self.navigationController.navigationBar setHidden:YES];
     [btnAllCriminals setBackgroundImage:btnBgImage forState:UIControlStateNormal];
     [btnMostReportedCriminals setBackgroundImage:btnBgImage forState:UIControlStateNormal];
     [btnMostWantedCriminals setBackgroundImage:btnBgImage forState:UIControlStateNormal];

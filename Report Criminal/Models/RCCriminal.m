@@ -9,5 +9,15 @@
 #import "RCCriminal.h"
 
 @implementation RCCriminal
-
+@synthesize firstName;
+@synthesize lastName;
+@synthesize age;
+@synthesize color;
+@synthesize gender;
+@synthesize addedOn;
+@synthesize identificationMark;
+@synthesize rating;
+@synthesize isArrested;
+@synthesize concernDepart;
+@synthesize reportedHistory;
 @end

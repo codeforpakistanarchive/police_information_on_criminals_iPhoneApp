@@ -12,6 +12,7 @@
 @interface CriminalDetailViewController : UIViewController
 
 #pragma mark - IBOutlets
-//@property (weak, nonatomic) IBOutlet UIButton *btnReported;
+@property (weak, nonatomic) IBOutlet UIButton *btnReported;
+@property (weak, nonatomic) IBOutlet UILabel *lblCriminalInfo;
 
 @end
