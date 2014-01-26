@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61C8E3118940D4B00DD4A29 /* AddLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61C8E3018940D4B00DD4A29 /* AddLocationViewController.m */; };
+		B61C8E3218940D4B00DD4A29 /* AddLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61C8E3018940D4B00DD4A29 /* AddLocationViewController.m */; };
+		B63CCDE3189441FE00BCF6F4 /* red-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B63CCDE2189441FE00BCF6F4 /* red-circle.png */; };
+		B63CCDE4189441FE00BCF6F4 /* red-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B63CCDE2189441FE00BCF6F4 /* red-circle.png */; };
+		B63CCDE9189459C400BCF6F4 /* AddressAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B63CCDE8189459C400BCF6F4 /* AddressAnnotation.m */; };
+		B63CCDEA189459C400BCF6F4 /* AddressAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B63CCDE8189459C400BCF6F4 /* AddressAnnotation.m */; };
+		B63CCDEC18945AF800BCF6F4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63CCDEB18945AF800BCF6F4 /* MapKit.framework */; };
 		B6550EF91893C83B008F01A4 /* CriminalListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550EF81893C83B008F01A4 /* CriminalListModel.m */; };
 		B6550EFA1893C83B008F01A4 /* CriminalListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550EF81893C83B008F01A4 /* CriminalListModel.m */; };
+		B6550F011893DEB3008F01A4 /* Criminal.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550F001893DEB3008F01A4 /* Criminal.m */; };
+		B6550F021893DEB3008F01A4 /* Criminal.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550F001893DEB3008F01A4 /* Criminal.m */; };
 		B670FE091893B94A00B575AF /* CriminalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670FE081893B94A00B575AF /* CriminalListViewController.m */; };
 		B670FE0A1893B94A00B575AF /* CriminalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670FE081893B94A00B575AF /* CriminalListViewController.m */; };
 		B670FE0D1893C25700B575AF /* CriminalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670FE0C1893C25700B575AF /* CriminalDetailViewController.m */; };
@@ -51,8 +60,6 @@
 		B69F49D41893A5D9005D6EB1 /* RCReported.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F49D21893A5D9005D6EB1 /* RCReported.m */; };
 		B69F49D71893A5F0005D6EB1 /* RCAuthority.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F49D61893A5F0005D6EB1 /* RCAuthority.m */; };
 		B69F49D81893A5F0005D6EB1 /* RCAuthority.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F49D61893A5F0005D6EB1 /* RCAuthority.m */; };
-		B69F49DB1893A6BE005D6EB1 /* Criminal.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F49DA1893A6BE005D6EB1 /* Criminal.m */; };
-		B69F49DC1893A6BE005D6EB1 /* Criminal.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F49DA1893A6BE005D6EB1 /* Criminal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +73,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B61C8E2F18940D4B00DD4A29 /* AddLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLocationViewController.h; sourceTree = "<group>"; };
+		B61C8E3018940D4B00DD4A29 /* AddLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLocationViewController.m; sourceTree = "<group>"; };
+		B63CCDE2189441FE00BCF6F4 /* red-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-circle.png"; sourceTree = "<group>"; };
+		B63CCDE7189459C400BCF6F4 /* AddressAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressAnnotation.h; sourceTree = "<group>"; };
+		B63CCDE8189459C400BCF6F4 /* AddressAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressAnnotation.m; sourceTree = "<group>"; };
+		B63CCDEB18945AF800BCF6F4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B6550EF71893C83B008F01A4 /* CriminalListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriminalListModel.h; sourceTree = "<group>"; };
 		B6550EF81893C83B008F01A4 /* CriminalListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CriminalListModel.m; sourceTree = "<group>"; };
+		B6550EFF1893DEB3008F01A4 /* Criminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Criminal.h; sourceTree = "<group>"; };
+		B6550F001893DEB3008F01A4 /* Criminal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Criminal.m; sourceTree = "<group>"; };
 		B670FE071893B94A00B575AF /* CriminalListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriminalListViewController.h; sourceTree = "<group>"; };
 		B670FE081893B94A00B575AF /* CriminalListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CriminalListViewController.m; sourceTree = "<group>"; };
 		B670FE0B1893C25700B575AF /* CriminalDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriminalDetailViewController.h; sourceTree = "<group>"; };
@@ -106,8 +121,6 @@
 		B69F49D21893A5D9005D6EB1 /* RCReported.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCReported.m; sourceTree = "<group>"; };
 		B69F49D51893A5F0005D6EB1 /* RCAuthority.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCAuthority.h; sourceTree = "<group>"; };
 		B69F49D61893A5F0005D6EB1 /* RCAuthority.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCAuthority.m; sourceTree = "<group>"; };
-		B69F49D91893A6BE005D6EB1 /* Criminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Criminal.h; sourceTree = "<group>"; };
-		B69F49DA1893A6BE005D6EB1 /* Criminal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Criminal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63CCDEC18945AF800BCF6F4 /* MapKit.framework in Frameworks */,
 				B69F496118938EA8005D6EB1 /* CoreGraphics.framework in Frameworks */,
 				B69F496318938EA8005D6EB1 /* UIKit.framework in Frameworks */,
 				B69F495F18938EA8005D6EB1 /* Foundation.framework in Frameworks */,
@@ -134,6 +148,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B63CCDE6189459C400BCF6F4 /* PinPlacingClasses */ = {
+			isa = PBXGroup;
+			children = (
+				B63CCDE7189459C400BCF6F4 /* AddressAnnotation.h */,
+				B63CCDE8189459C400BCF6F4 /* AddressAnnotation.m */,
+			);
+			path = PinPlacingClasses;
+			sourceTree = "<group>";
+		};
 		B670FE061893B93400B575AF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +166,8 @@
 				B670FE0C1893C25700B575AF /* CriminalDetailViewController.m */,
 				B670FE0F1893C26F00B575AF /* CriminalReportedViewController.h */,
 				B670FE101893C26F00B575AF /* CriminalReportedViewController.m */,
+				B61C8E2F18940D4B00DD4A29 /* AddLocationViewController.h */,
+				B61C8E3018940D4B00DD4A29 /* AddLocationViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +194,7 @@
 		B69F495D18938EA8005D6EB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B63CCDEB18945AF800BCF6F4 /* MapKit.framework */,
 				B69F495E18938EA8005D6EB1 /* Foundation.framework */,
 				B69F496018938EA8005D6EB1 /* CoreGraphics.framework */,
 				B69F496218938EA8005D6EB1 /* UIKit.framework */,
@@ -205,6 +231,7 @@
 				B69F499C18938F13005D6EB1 /* InfoPlist.strings */,
 				B69F499E18938F13005D6EB1 /* Helper Classes */,
 				B69F499F18938F13005D6EB1 /* Images.xcassets */,
+				B63CCDE2189441FE00BCF6F4 /* red-circle.png */,
 				B69F49A018938F13005D6EB1 /* main.m */,
 				B69F49A118938F13005D6EB1 /* Models */,
 				B69F49A218938F13005D6EB1 /* Report Criminal-Info.plist */,
@@ -225,6 +252,7 @@
 		B69F499E18938F13005D6EB1 /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B63CCDE6189459C400BCF6F4 /* PinPlacingClasses */,
 				B69F49BC18939637005D6EB1 /* Reachability */,
 				B69F49B7189392AA005D6EB1 /* App Utitlity */,
 			);
@@ -250,8 +278,8 @@
 			isa = PBXGroup;
 			children = (
 				B69F49B318939284005D6EB1 /* Model.xcdatamodeld */,
-				B69F49D91893A6BE005D6EB1 /* Criminal.h */,
-				B69F49DA1893A6BE005D6EB1 /* Criminal.m */,
+				B6550EFF1893DEB3008F01A4 /* Criminal.h */,
+				B6550F001893DEB3008F01A4 /* Criminal.m */,
 				B69F49C91893A505005D6EB1 /* Reported.h */,
 				B69F49CA1893A505005D6EB1 /* Reported.m */,
 				B69F49C51893A505005D6EB1 /* ConcernAuthority.h */,
@@ -358,6 +386,7 @@
 				B69F49AC18938F13005D6EB1 /* Images.xcassets in Resources */,
 				B69F49A618938F13005D6EB1 /* Main.storyboard in Resources */,
 				B69F49AA18938F13005D6EB1 /* InfoPlist.strings in Resources */,
+				B63CCDE3189441FE00BCF6F4 /* red-circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +399,7 @@
 				B69F49AD18938F13005D6EB1 /* Images.xcassets in Resources */,
 				B69F49AB18938F13005D6EB1 /* InfoPlist.strings in Resources */,
 				B69F49A718938F13005D6EB1 /* Main.storyboard in Resources */,
+				B63CCDE4189441FE00BCF6F4 /* red-circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,15 +414,17 @@
 				B69F49CF1893A5C2005D6EB1 /* RCCriminal.m in Sources */,
 				B670FE091893B94A00B575AF /* CriminalListViewController.m in Sources */,
 				B69F49D31893A5D9005D6EB1 /* RCReported.m in Sources */,
+				B6550F011893DEB3008F01A4 /* Criminal.m in Sources */,
 				B69F49AE18938F13005D6EB1 /* main.m in Sources */,
-				B69F49DB1893A6BE005D6EB1 /* Criminal.m in Sources */,
 				B69F49BA18939336005D6EB1 /* AppUtility.m in Sources */,
+				B61C8E3118940D4B00DD4A29 /* AddLocationViewController.m in Sources */,
 				B69F49A418938F13005D6EB1 /* AppDelegate.m in Sources */,
 				B69F49CB1893A505005D6EB1 /* Reported.m in Sources */,
 				B69F49BF18939637005D6EB1 /* Reachability.m in Sources */,
 				B69F49C71893A505005D6EB1 /* ConcernAuthority.m in Sources */,
 				B670FE0D1893C25700B575AF /* CriminalDetailViewController.m in Sources */,
 				B69F49D71893A5F0005D6EB1 /* RCAuthority.m in Sources */,
+				B63CCDE9189459C400BCF6F4 /* AddressAnnotation.m in Sources */,
 				B69F49B518939284005D6EB1 /* Model.xcdatamodeld in Sources */,
 				B6550EF91893C83B008F01A4 /* CriminalListModel.m in Sources */,
 			);
@@ -402,17 +434,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B69F49DC1893A6BE005D6EB1 /* Criminal.m in Sources */,
 				B69F49BB18939336005D6EB1 /* AppUtility.m in Sources */,
+				B63CCDEA189459C400BCF6F4 /* AddressAnnotation.m in Sources */,
 				B69F49D41893A5D9005D6EB1 /* RCReported.m in Sources */,
 				B69F49D01893A5C2005D6EB1 /* RCCriminal.m in Sources */,
 				B69F49CC1893A505005D6EB1 /* Reported.m in Sources */,
+				B6550F021893DEB3008F01A4 /* Criminal.m in Sources */,
 				B69F49C81893A505005D6EB1 /* ConcernAuthority.m in Sources */,
 				B69F49A518938F13005D6EB1 /* AppDelegate.m in Sources */,
 				B69F49C018939637005D6EB1 /* Reachability.m in Sources */,
 				B69F49B618939284005D6EB1 /* Model.xcdatamodeld in Sources */,
 				B670FE0A1893B94A00B575AF /* CriminalListViewController.m in Sources */,
 				B6550EFA1893C83B008F01A4 /* CriminalListModel.m in Sources */,
+				B61C8E3218940D4B00DD4A29 /* AddLocationViewController.m in Sources */,
 				B69F49AF18938F13005D6EB1 /* main.m in Sources */,
 				B69F498A18938EA9005D6EB1 /* Report_CriminalTests.m in Sources */,
 				B670FE0E1893C25700B575AF /* CriminalDetailViewController.m in Sources */,

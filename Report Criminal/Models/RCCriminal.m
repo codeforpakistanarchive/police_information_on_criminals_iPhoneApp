@@ -20,4 +20,6 @@
 @synthesize isArrested;
 @synthesize concernDepart;
 @synthesize reportedHistory;
+@synthesize crime;
+@synthesize photoPath;
 @end

@@ -13,15 +13,17 @@
 
 @interface Criminal : NSManagedObject
 
-@property (nonatomic, retain) NSString * firstName;
-@property (nonatomic, retain) NSString * lastName;
+@property (nonatomic, retain) NSDate * addedOn;
 @property (nonatomic, retain) NSNumber * age;
 @property (nonatomic, retain) NSString * color;
+@property (nonatomic, retain) NSString * firstName;
 @property (nonatomic, retain) NSString * gender;
-@property (nonatomic, retain) NSDate * addedOn;
 @property (nonatomic, retain) NSString * identificationMark;
-@property (nonatomic, retain) NSNumber * rating;
 @property (nonatomic, retain) NSNumber * isArrested;
+@property (nonatomic, retain) NSString * lastName;
+@property (nonatomic, retain) NSNumber * rating;
+@property (nonatomic, retain) NSString * crime;
+@property (nonatomic, retain) NSString * photoPath;
 @property (nonatomic, retain) ConcernAuthority *concernDepart;
 @property (nonatomic, retain) NSSet *reportedHistory;
 @end

@@ -19,6 +19,8 @@
 @property (nonatomic, retain) NSString * identificationMark;
 @property (nonatomic, retain) NSNumber * rating;
 @property (nonatomic, retain) NSNumber * isArrested;
+@property (nonatomic, retain) NSString * crime;
+@property (nonatomic, retain) NSString * photoPath;
 @property (nonatomic, retain) RCAuthority *concernDepart;
 @property (nonatomic, retain) NSSet *reportedHistory;
 

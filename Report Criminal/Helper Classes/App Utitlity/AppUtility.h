@@ -17,7 +17,9 @@
 #define GlobalContext (AppDelegate *)[[UIApplication sharedApplication] delegate]
 
 #define AppBgColor        [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]
-#define btnBgImage        [UIImage imageNamed:@"btnBg.png"]
+#define btnBgImage        [UIImage imageNamed:@"btn_a_nor1.png"]
+#define btnBgImageBig        [UIImage imageNamed:@"btn_a_nor.png"]
+#define btnBgImageSelected        [UIImage imageNamed:@"btn_c_over1.png"]
 
 @interface AppUtility : NSObject
 

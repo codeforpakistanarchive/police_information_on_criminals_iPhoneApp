@@ -15,5 +15,5 @@
 
 @interface CriminalListModel : NSObject
 
--(NSArray *)getAllCriminals;
+-(NSArray *)getAllCriminals:(int)number;
 @end

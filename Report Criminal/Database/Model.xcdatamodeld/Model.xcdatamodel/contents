@@ -10,11 +10,13 @@
         <attribute name="addedOn" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="crime" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="identificationMark" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="isArrested" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoPath" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rating" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="concernDepart" maxCount="1" deletionRule="Nullify" destinationEntity="ConcernAuthority" inverseName="criminals" inverseEntity="ConcernAuthority" syncable="YES"/>
         <relationship name="reportedHistory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Reported" inverseName="criminal" inverseEntity="Reported" syncable="YES"/>
@@ -27,8 +29,8 @@
         <relationship name="criminal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Criminal" inverseName="reportedHistory" inverseEntity="Criminal" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Criminal" positionX="232" positionY="-189" width="128" height="208"/>
         <element name="ConcernAuthority" positionX="81" positionY="27" width="128" height="103"/>
+        <element name="Criminal" positionX="232" positionY="-189" width="128" height="238"/>
         <element name="Reported" positionX="403" positionY="3" width="128" height="118"/>
     </elements>
 </model>

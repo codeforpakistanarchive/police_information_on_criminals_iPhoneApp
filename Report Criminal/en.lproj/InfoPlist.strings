@@ -1,2 +1,3 @@
 /* Localized versions of Info.plist keys */
 
+NSLocationUsageDescription = "Location in needed to report this criminal";

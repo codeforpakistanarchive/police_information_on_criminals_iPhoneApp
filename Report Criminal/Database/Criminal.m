@@ -13,15 +13,17 @@
 
 @implementation Criminal
 
-@dynamic firstName;
-@dynamic lastName;
+@dynamic addedOn;
 @dynamic age;
 @dynamic color;
+@dynamic firstName;
 @dynamic gender;
-@dynamic addedOn;
 @dynamic identificationMark;
-@dynamic rating;
 @dynamic isArrested;
+@dynamic lastName;
+@dynamic rating;
+@dynamic crime;
+@dynamic photoPath;
 @dynamic concernDepart;
 @dynamic reportedHistory;
 

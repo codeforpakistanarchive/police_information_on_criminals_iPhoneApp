@@ -25,4 +25,12 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnNearMyPlaceCriminal;
 
 @property (weak, nonatomic) IBOutlet UITableView *tblCriminalList;
+
+#pragma mark - IBActions
+- (IBAction)allCriminalSelected:(id)sender;
+- (IBAction)reportedCriminalSelected:(id)sender;
+- (IBAction)wantedCriminalSelected:(id)sender;
+- (IBAction)myPlaceCriminalSelected:(id)sender;
+
+
 @end
